@@ -1,0 +1,3 @@
+addition.bejian.fr {
+    reverse_proxy addition:8501
+}

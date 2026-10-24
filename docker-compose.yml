@@ -1,8 +1,22 @@
 services:
+  caddy:
+    image: caddy:2
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
   addition:
     build: ../01_addition
     image: addition
     container_name: addition
     restart: unless-stopped
-    ports:
-      - "8501:8501"
+
+volumes:
+  caddy_data:
+  caddy_config:
