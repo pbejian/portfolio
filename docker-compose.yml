@@ -1,0 +1,8 @@
+services:
+  addition:
+    build: ../01_addition
+    image: addition
+    container_name: addition
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
