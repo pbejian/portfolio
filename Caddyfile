@@ -1,3 +1,7 @@
 addition.bejian.fr {
     reverse_proxy addition:8501
 }
+
+premiers.bejian.fr {
+    reverse_proxy premiers:8501
+}

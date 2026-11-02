@@ -17,6 +17,12 @@ services:
     container_name: addition
     restart: unless-stopped
 
+  premiers:
+    build: ../03_premiers
+    image: premiers
+    container_name: premiers
+    restart: unless-stopped
+
 volumes:
   caddy_data:
   caddy_config:
