@@ -1,4 +1,4 @@
-# Portfolio — infrastructure
+# Portfolio : infrastructure
 
 Configuration du serveur qui héberge les applications de mon portfolio : un VPS OVH sous Ubuntu, avec Docker Compose et le reverse proxy Caddy (HTTPS automatique via Let's Encrypt).
 
